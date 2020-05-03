@@ -23,6 +23,13 @@ let employees = [
         email: "test@test.com",
         id: 3
     },
+    {
+        firstName: "Zeke", 
+        lastName: "Alton",
+        job: "Painter",
+        email: "test@test.com",
+        id: 4
+    }
 
 ]
 
