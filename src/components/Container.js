@@ -66,7 +66,7 @@ constructor(props) {
                     <div className="row">
                         <div className={"col-12 text-center"}>
                             <div>
-                                <h4>Sort employees by:</h4>
+                                <h1>Sort employees by:</h1>
                                 <hr/>
                                 <div>
                                     <button type="button" className="btn btn-light mr-1 mb-4" onClick={this.sortFirstName}> First Name</button>
