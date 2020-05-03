@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import employees from "../assets/employees";
-import Cards from "./cards";
+import Cards from "./Cards";
 
 export default class Container extends Component {
 
@@ -16,8 +16,8 @@ constructor(props) {
     sortFirstName = () => {
 
         function compare(a, b) {
-            const name1 = a.firstName.toLowerCase();
-            const name2 = b.firstName.toLowerCase();
+            const name1 = a.firstName.toUpperCase();
+            const name2 = b.firstName.toUpperCase();
     
             let comparison = 0;
             if (name1 > name2) {
@@ -38,8 +38,8 @@ constructor(props) {
     sortLastName = () => {
 
         function compare(a, b) {
-            const name1 = a.lastName.toLowerCase();
-            const name2 = b.lastName.toLowerCase();
+            const name1 = a.lastName.toUpperCase();
+            const name2 = b.lastName.toUpperCase();
     
             let comparison = 0;
             if (name1 > name2) {
@@ -58,3 +58,34 @@ constructor(props) {
 
         this.setState({list: sorted })
     }
+
+    render() {
+        return (
+            <div>
+                <div className={"container"}>
+                    <div className="row">
+                        <div className={"col-12 text-center"}>
+                            <div>
+                                <h4>Sort employees by:</h4>
+                                <hr/>
+                                <div>
+                                    <button type="button" className="btn btn-light mr-1 mb-4" onClick={this.orderByName}> First Name</button>
+                                    <button type="button" className="btn btn-light mr-1 mb-4" onClick={this.orderByLast}> Last Name</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className={"container"}>
+                    <div className={"row justify-content-center"}>
+                        <div className={"col-12"}>
+                            <ul className="list-group">
+                                <Cards list={this.state.list} />
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+}
