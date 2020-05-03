@@ -69,8 +69,8 @@ constructor(props) {
                                 <h4>Sort employees by:</h4>
                                 <hr/>
                                 <div>
-                                    <button type="button" className="btn btn-light mr-1 mb-4" onClick={this.orderByName}> First Name</button>
-                                    <button type="button" className="btn btn-light mr-1 mb-4" onClick={this.orderByLast}> Last Name</button>
+                                    <button type="button" className="btn btn-light mr-1 mb-4" onClick={this.sortFirstName}> First Name</button>
+                                    <button type="button" className="btn btn-light mr-1 mb-4" onClick={this.sortLastName}> Last Name</button>
                                 </div>
                             </div>
                         </div>
