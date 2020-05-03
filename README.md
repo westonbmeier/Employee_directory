@@ -10,9 +10,6 @@ As a user, I want to be able to view my entire employee directory at once so tha
 
 We are using React, Express, and Node. 
 
-## Deployment ## 
-
-[gitpages](https://westonbmeier.github.io/Employee_directory/)
 
 ## Screenshots ## 
 
