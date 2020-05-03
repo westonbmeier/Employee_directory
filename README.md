@@ -12,7 +12,7 @@ We are using React, Express, and Node.
 
 ## Deployment ## 
 
-![gitpages](https://westonbmeier.github.io/Employee_directory/)
+[gitpages](https://westonbmeier.github.io/Employee_directory/)
 
 ## Screenshots ## 
 
